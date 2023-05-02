@@ -1,1 +1,9 @@
- n
+ apiVersion: v1
+kind: Pod
+metadata:
+  name: stress
+spec:
+  containers:
+    - image:  ashokg1992/stress
+      imagePullPolicy: Always
+      name: stress
